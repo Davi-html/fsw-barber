@@ -5,6 +5,7 @@ function Home() {
   return (
     <>
       <Button>Hello</Button>
+      <h1>hello world</h1>
     </>
   );
 }
