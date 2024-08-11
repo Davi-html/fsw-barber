@@ -1,7 +1,6 @@
 import Header from "./_components/header"
 import { Button } from "./_components/ui/button"
 import { Input } from "./_components/ui/input"
-import { Card, CardContent } from "./_components/ui/card"
 import Image from "next/image"
 import { db } from "./_lib/prisma"
 import BarbershopItem from "./_components/barbershop-item"
@@ -16,7 +15,7 @@ const Home = async () => {
       {/* Header */}
       <Header />
       <div className="p-5">
-        <h2 className="text-xl font-bold">Olá, Davii</h2>
+        <h2 className="text-xl font-bold">Olá, Davis</h2>
         <p>Segnda-feira, 05 de agosto</p>
 
         <div className="mt-6 flex items-center gap-2">
@@ -90,16 +89,6 @@ const Home = async () => {
           ))}
         </div>
       </div>
-
-      <footer>
-        <Card>
-          <CardContent className="px-5 py-6">
-            <p className="text-sm text-gray-400">
-              © 2023 Copyright <span className="font-bold">FSW Barber</span>
-            </p>
-          </CardContent>
-        </Card>
-      </footer>
     </div>
   )
 }
