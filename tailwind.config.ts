@@ -3,19 +3,11 @@ import type { Config } from "tailwindcss"
 const config = {
   darkMode: ["class"],
   content: [
-<<<<<<< HEAD
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
-=======
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
->>>>>>> f19835fafdb021309650a4e0f90158cff4a121d9
   prefix: "",
   theme: {
     container: {
@@ -85,8 +77,4 @@ const config = {
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
 
-<<<<<<< HEAD
 export default config
-=======
-export default config
->>>>>>> f19835fafdb021309650a4e0f90158cff4a121d9
