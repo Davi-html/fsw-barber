@@ -1,11 +1,11 @@
 import Header from "./_components/header"
 import { Button } from "./_components/ui/button"
-import { Input } from "./_components/ui/input"
 import Image from "next/image"
 import { db } from "./_lib/prisma"
 import BarbershopItem from "./_components/barbershop-item"
-import { EyeIcon, FootprintsIcon, SearchIcon } from "lucide-react"
+import { EyeIcon, FootprintsIcon } from "lucide-react"
 import BookingItem from "./_components/booking-item"
+import Search from "./_components/search"
 
 const Home = async () => {
   const barbershop = await db.barbershop.findMany()
@@ -18,11 +18,8 @@ const Home = async () => {
         <h2 className="text-xl font-bold">Olá, Davis</h2>
         <p>Segnda-feira, 05 de agosto</p>
 
-        <div className="mt-6 flex items-center gap-2">
-          <Input placeholder="Faça sua busca" />
-          <Button>
-            <SearchIcon></SearchIcon>
-          </Button>
+        <div className="mt-6">
+          <Search />
         </div>
 
         <div className="relative mt-6 h-[150px] w-full">
